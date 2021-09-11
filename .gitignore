@@ -1,0 +1,5 @@
+test
+.dev*
+.vs*
+.DS
+*.json
