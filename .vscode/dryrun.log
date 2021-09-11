@@ -1,0 +1,60 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/eekokyoong/Desktop/42Core/42Projects'
+gcc -g -Wall -Wextra -Werror -c ft_atoi.c -o ft_atoi.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_bzero.c -o ft_bzero.o
+gcc -g -Wall -Wextra -Werror -c ft_calloc.c -o ft_calloc.o
+gcc -g -Wall -Wextra -Werror -c ft_isalnum.c -o ft_isalnum.o
+gcc -g -Wall -Wextra -Werror -c ft_isalpha.c -o ft_isalpha.o
+gcc -g -Wall -Wextra -Werror -c ft_isascii.c -o ft_isascii.o
+gcc -g -Wall -Wextra -Werror -c ft_isdigit.c -o ft_isdigit.o
+gcc -g -Wall -Wextra -Werror -c ft_isprint.c -o ft_isprint.o
+gcc -g -Wall -Wextra -Werror -c ft_toupper.c -o ft_toupper.o
+gcc -g -Wall -Wextra -Werror -c ft_itoa.c -o ft_itoa.o
+gcc -g -Wall -Wextra -Werror -c ft_memccpy.c -o ft_memccpy.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_memchr.c -o ft_memchr.o
+gcc -g -Wall -Wextra -Werror -c ft_memcmp.c -o ft_memcmp.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_memcpy.c -o ft_memcpy.o
+gcc -g -Wall -Wextra -Werror -c ft_memmove.c -o ft_memmove.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_memset.c -o ft_memset.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_putchar_fd.c -o ft_putchar_fd.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_putendl_fd.c -o ft_putendl_fd.o
+gcc -g -Wall -Wextra -Werror -c ft_putnbr_fd.c -o ft_putnbr_fd.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_putstr_fd.c -o ft_putstr_fd.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_split.c -o ft_split.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_strchr.c -o ft_strchr.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_strdup.c -o ft_strdup.o
+gcc -g -Wall -Wextra -Werror -c ft_strjoin.c -o ft_strjoin.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_strlcat.c -o ft_strlcat.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_strlcpy.c -o ft_strlcpy.o
+gcc -g -Wall -Wextra -Werror -c ft_strlen.c -o ft_strlen.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_strmapi.c -o ft_strmapi.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_strncmp.c -o ft_strncmp.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_strnstr.c -o ft_strnstr.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_strrchr.c -o ft_strrchr.o
+gcc -g -Wall -Wextra -Werror -c ft_strtrim.c -o ft_strtrim.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_substr.c -o ft_substr.o
+ 
+gcc -g -Wall -Wextra -Werror -c ft_tolower.c -o ft_tolower.o
+echo Generating Standard libft.a..
+ar rcs libft.a ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_toupper.o ft_itoa.o ft_memccpy.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_putchar_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_putstr_fd.o ft_split.o ft_strchr.o ft_strdup.o ft_strjoin.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strmapi.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_strtrim.o ft_substr.o ft_tolower.o ft_strlcpy.o
+ranlib libft.a
+ 
+make: Leaving directory `/Users/eekokyoong/Desktop/42Core/42Projects'
+ 

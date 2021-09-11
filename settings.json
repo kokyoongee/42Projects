@@ -1,0 +1,13 @@
+{
+	"files.associations": {
+		"Makefile": "makefile",
+		"cstdio": "cpp",
+		"libft.h": "c"
+	},
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.renderWhitespace": "all",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+}
