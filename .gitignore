@@ -1,5 +1,8 @@
-test
+tests
 .dev*
 .vs*
 .DS
 *.json
+Libfttest
+libftTester
+libft.a

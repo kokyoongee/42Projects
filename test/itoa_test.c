@@ -52,9 +52,7 @@ char *ft_itoa(int n)
 
 	len = nb_len(n);
 
-	str = (char *)malloc(sizeof(char) * (len + 1));
-	if(!str)
-		return (NULL);
+	str = ft_malloc(sizeof(char) * (len + 1));
 	str[len--] = '\0';
 	if(n == -2147483648)
 	{
@@ -86,8 +84,7 @@ char* ft_strmapi(char const* s, char (*f)(unsigned int, char))
 	if (!s || !f)
 		return (0);
 	len = ft_strlen(s);
-	if (!(str = (char*)malloc(sizeof(char) * (len + 1))))
-		return (0);
+	str = (char*)ft_malloc(sizeof(char) * (len + 1));
 	while (i < len)
 	{
 		str[i] = f(i, s[i]);

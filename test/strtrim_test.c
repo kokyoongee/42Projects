@@ -15,6 +15,8 @@ int			ft_getstart(const char *s1, const char *set)
 			break ;
 	}
 	return (s  - s1 - 1);
+	// hehehehello
+	// set = "he"
 }
 
 int			ft_getend(const char *s1, const char *set)
@@ -58,9 +60,8 @@ char		*ft_strtrim(char const *s1, char const *set)
 int main()
 {
 	char *str = "hello";
-	printf("%s\n", ft_strtrim("heeeeehello h worldheeh", "he"));
+	printf("%s\n", ft_strtrim("heeeeehelhlo h worldheeh", "he"));
 
-	printf("%c\n", *str++);
 }
 
 // implemetation to be considered https://github.com/opencoff/ifscand/blob/master/lib/strtrim.c

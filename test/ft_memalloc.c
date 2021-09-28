@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "../libft.h"
 
-void *ft_memalloc(size_t len)
+void *ft_malloc(size_t len)
 {
 	char *ptr;
 
@@ -14,8 +14,10 @@ void *ft_memalloc(size_t len)
 
 int main()
 {
+	int trigger;
 	char *str;
 
-	str = (char *)ft_memalloc(sizeof(char) * 5);
+	str = (char *)ft_malloc(sizeof(char) * 5);
+	trigger =ft_isalnum('a');
 
 }
