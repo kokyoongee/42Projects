@@ -2,7 +2,7 @@ NAME		=	libft.a
 
 CC			=	gcc
 
-CFLAGS		=	-g -Wall -Wextra -Werror
+CFLAGS		=	-Wall -Wextra -Werror
 
 RM			=	rm -f
 
@@ -34,26 +34,22 @@ B_OBJ		=	$(B_SRC:.c=.o)
 all			:	$(NAME)
 
 $(NAME)		: 	$(OBJ)
-				@ echo Generating Standard $(NAME)..
-				@ $(AR) $(NAME) $(OBJ)
-				@ $(RL) $(NAME)
+				$(AR) $(NAME) $(OBJ)
+				$(RL) $(NAME)
 
 .c.o		:
-				@ $(CC) $(CFLAGS) -c $< -o $@
+				$(CC) $(CFLAGS) -c $< -o $@
 
 clean		:
-				@ echo Removing Object Files..
-				@ $(RM) $(OBJ) $(B_OBJ)
+				$(RM) $(OBJ) $(B_OBJ)
 
 fclean		:	clean
-				@ echo Removing $(NAME)..
-				@ $(RM) $(NAME)
+				$(RM) $(NAME)
 
 re			:	fclean all
 
 bonus		:	$(OBJ) $(B_OBJ)
-				@ echo Generating Bonus $(NAME)..
-				@ $(AR) $(NAME) $(OBJ) $(B_OBJ)
-				@ $(RL) $(NAME)
+				$(AR) $(NAME) $(OBJ) $(B_OBJ)
+				$(RL) $(NAME)
 
 .PHONY		:	all clean fclean re bonus
