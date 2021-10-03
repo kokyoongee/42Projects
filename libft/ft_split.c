@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int	ft_word_count(char const *s, char c)
+static int	ft_word_count(char const *s, char c)
 {
 	unsigned int	i;
 	int				cntr;
@@ -19,7 +19,7 @@ int	ft_word_count(char const *s, char c)
 	return (cntr);
 }
 
-char	*ft_strncpy(char *dst, const char *src, size_t n)
+static char	*ft_strncpy(char *dst, const char *src, size_t n)
 {
 	size_t	i;
 
@@ -37,7 +37,7 @@ char	*ft_strncpy(char *dst, const char *src, size_t n)
 	return (dst);
 }
 
-char	*ft_strndup(const char *s, size_t n)
+static char	*ft_strndup(const char *s, size_t n)
 {
 	char	*str;
 
@@ -59,6 +59,8 @@ char	**ft_split(char const *s, char c)
 	j = 0;
 	i = 0;
 	k = 0;
+	if (!s)
+		return (NULL);
 	result = (char **)malloc(sizeof(char *) * (ft_word_count(s, c) + 1));
 	if (!result)
 		return (NULL);
