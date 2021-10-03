@@ -5,7 +5,7 @@ char	*ft_strdup(char *s1)
 	size_t	len;
 	void	*new;
 
-	len = strlen(s1) + 1;
+	len = ft_strlen(s1) + 1;
 	new = malloc(len);
 	if (new == NULL)
 		return (NULL);
